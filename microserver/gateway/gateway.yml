@@ -1,9 +1,6 @@
-spring:
-  profiles:
-    active: dev
-  datasource:
-    type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://127.0.0.1:3306/wh_gateway?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
-    username: root
-    password: Brc@1234
-    driver-class-name: com.mysql.cj.jdbc.Driver
+# springboot 2.1.6 引入actuator需要声明导出的接口，否则不会像早期版本那样自动映射出去
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
