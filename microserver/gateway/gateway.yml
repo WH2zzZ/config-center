@@ -10,7 +10,7 @@ eureka:
     fetch-registry: false
     #设置Eureka的地址
     service-url:
-      defaultZone: http://127.0.0.1:8761/eureka
+      defaultZone: http://gateway:8761/eureka
 
 
 # springboot 2.1.6 引入actuator需要声明导出的接口，否则不会像早期版本那样自动映射出去
