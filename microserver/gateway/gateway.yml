@@ -49,9 +49,9 @@ hysteria:
 # 对于超过5s的配置，必须同时设置hystrix和ribbon，建议hystrix的时间大于ribbon
 ribbon:
   # 指的是建立连接所用的时间，适用于网络状况正常的情况下，两端连接所用的时间。
-  ReadTimeout: 5000
+  ReadTimeout: 10000
   # 指的是建立连接后从服务器读取到可用资源所用的时间。
-  ConnectTimeout: 5000
+  ConnectTimeout: 10000
 
 # springboot 2.1.6 引入actuator需要声明导出的接口，否则不会像早期版本那样自动映射出去
 management:
