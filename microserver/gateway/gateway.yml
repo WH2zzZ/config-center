@@ -44,8 +44,8 @@ hysteria:
       execution:
         isolation:
           thread:
-            # 设置20s超时
-            timeoutInMilliseconds: 90000
+            # 设置90s超时
+            timeoutInMilliseconds: 5000
 # 对于超过5s的配置，必须同时设置hystrix和ribbon，建议hystrix的时间大于ribbon，如果不配置ribbon的重试次数，默认会重试一次
 # ribbon参数详解：
 #     根据上面的参数计算重试的次数：
