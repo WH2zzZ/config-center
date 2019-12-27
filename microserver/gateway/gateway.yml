@@ -16,7 +16,7 @@ eureka:
 #自定义路由规则
 zuul:
   #排除zuul基于Eureka服务ID路由的自动映射，如果要排除所有的服务，可以将属性设置为"*"
-  ignored-services: 'memberserver'
+#  ignored-services: 'memberserver'
   # 可以为服务做自定义路由，通过prefix表示在路由规则中前缀必须带上api
   # ignored-services: '*'
   # prefix: /api
