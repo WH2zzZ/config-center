@@ -34,6 +34,8 @@ hysteria:
     # 如果是指定服务超时策略可以通过将default -> 服务ID 来实现，例如 default -> memberserver
     default:
       execution:
+        timeout:
+          enabled: false
         isolation:
           thread:
             # 设置10s超时
