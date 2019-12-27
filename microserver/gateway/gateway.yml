@@ -32,20 +32,20 @@ zuul:
 hysteria:
   command:
     # 如果是指定服务超时策略可以通过将default -> 服务ID 来实现，例如 default -> memberserver
-#    default:
-#      execution:
-#        isolation:
-#          thread:
-#            # 设置10s超时
-#            timeoutInMilliseconds: 5000
-    # todo ：监测是否可以别的服务调用时是10s，member服务调用时是20s
-    # 自定义服务级别的hystrix策略
-    memberserver:
+    default:
       execution:
         isolation:
           thread:
-            # 设置90s超时
+            # 设置10s超时
             timeoutInMilliseconds: 5000
+    # todo ：监测是否可以别的服务调用时是10s，member服务调用时是20s
+    # 自定义服务级别的hystrix策略
+#    memberserver:
+#      execution:
+#        isolation:
+#          thread:
+#            # 设置90s超时
+#            timeoutInMilliseconds: 5000
 # 对于超过5s的配置，必须同时设置hystrix和ribbon，建议hystrix的时间大于ribbon，如果不配置ribbon的重试次数，默认会重试一次
 # ribbon参数详解：
 #     根据上面的参数计算重试的次数：
