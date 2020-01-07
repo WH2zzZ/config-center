@@ -22,7 +22,7 @@ zuul:
   # prefix: /api
   routes:
     #服务ID：路由规则
-    memberserver: /member/**
+#    memberserver: /member/**
     #对于外部服务的路由映射，当访问有outerserver就会映射到http://outerserver:8888
     outerserver:
       path: /outerserver/**
