@@ -1,5 +1,5 @@
 server:
-  port: 800
+  port: 8002
 
 #服务注册和发现中心
 eureka:
