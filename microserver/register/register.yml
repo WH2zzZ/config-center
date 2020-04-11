@@ -1,5 +1,5 @@
 server:
-  port: 8762
+  port: 8761
 
 #服务注册和发现中心
 eureka:
