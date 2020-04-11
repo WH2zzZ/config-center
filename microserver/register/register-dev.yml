@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://127.0.0.1:3306/wh_gateway?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: Brc@1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+logging:
+  level:
+    root: debug
