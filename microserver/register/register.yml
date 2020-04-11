@@ -11,7 +11,7 @@ eureka:
     fetch-registry: false
     #设置Eureka的地址
     service-url:
-      defaultZone: http://127.0.0.1:8762/eureka
+      defaultZone: http://127.0.0.1:8761/eureka
 
 management:
   endpoints:
