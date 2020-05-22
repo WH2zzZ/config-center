@@ -51,9 +51,9 @@ spring:
         prepStmtCacheSqlLimit: 2048
         useServerPrepStmts: true
 liquibase:
-  change-log: classpath:liquibase/master.yaml
+  changeLog: classpath:liquibase/master.yaml
   enabled: true
-  drop-first: false
+  dropFirst: false
 
 #服务注册和发现中心
 eureka:
