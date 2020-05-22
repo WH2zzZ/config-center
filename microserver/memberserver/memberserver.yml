@@ -15,6 +15,28 @@ spring:
       shutdown:
         await-termination: true # 应用关闭时，是否等待定时任务执行完成。默认为 false ，建议设置为 true
         await-termination-period: 60 # 等待任务完成的最大时长，单位为秒。默认为 0 ，根据自己应用来设置
+    execution-one:
+      thread-name-prefix: task-one-
+      pool:
+        core-size: 8
+        max-size: 20
+        keep-alive: 60s
+        queue-capacity: 200
+        allow-core-thread-timeout: true
+      shutdown:
+        await-termination: true
+        await-termination-period: 60
+    execution-two:
+      thread-name-prefix: task-two-
+      pool:
+        core-size: 8
+        max-size: 20
+        keep-alive: 60s
+        queue-capacity: 200
+        allow-core-thread-timeout: true
+      shutdown:
+        await-termination: true
+        await-termination-period: 60
 
 #服务注册和发现中心
 eureka:
