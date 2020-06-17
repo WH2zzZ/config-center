@@ -99,6 +99,9 @@ spring:
                 enabled: true
     kafka:
         bootstrap-servers: test-kafka.iot.brc.com.cn:39092,test-kafka.iot.brc.com.cn:39093,test-kafka.iot.brc.com.cn:39094
+        listener:
+            concurrency: 2
+            ack-mode: manual_immediate
 
 server:
     port: 8091
