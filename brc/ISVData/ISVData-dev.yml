@@ -161,3 +161,4 @@ application:
         appSecret: fba44afe49fca63658c407f71aac0826
     jiabao:
         brc-tenant-id: 2
+    test: 2
