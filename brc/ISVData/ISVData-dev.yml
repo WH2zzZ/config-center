@@ -152,13 +152,13 @@ jhipster:
 application:
     scheduleTasks:
         aliAlert:
-            enabled: true
+            enabled: false
 
     ali-client:
         host: api.link.aliyun.com
-        version: 1.0.6
+        version: 1.0.5
         appKey: 25011244
         appSecret: fba44afe49fca63658c407f71aac0826
     jiabao:
-        brc-tenant-id: 2
-    test: 2
+        brc-tenant-id: 3
+    test: 1
