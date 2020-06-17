@@ -19,13 +19,6 @@ logging:
         io.github.jhipster: DEBUG
         com.brc.iot.isvdata: DEBUG
 
-eureka:
-    instance:
-        prefer-ip-address: true
-    client:
-        service-url:
-            defaultZone: http://admin:${jhipster.registry.password}@${registry-host}:8761/eureka/
-
 spring:
     profiles:
         active: sit
@@ -102,9 +95,6 @@ spring:
         listener:
             concurrency: 2
             ack-mode: manual_immediate
-
-server:
-    port: 8091
 
 # ===================================================================
 # JHipster specific properties
