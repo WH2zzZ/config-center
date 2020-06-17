@@ -160,5 +160,5 @@ application:
         appKey: 25011244
         appSecret: fba44afe49fca63658c407f71aac0826
     jiabao:
-        brc-tenant-id: 3
-    test: 1
+        brc-tenant-id: 4
+    test: 4
